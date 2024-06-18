@@ -4,5 +4,16 @@ service:
   orgIdentifier: UsheerNG
   projectIdentifier: UsheerNGTest
   serviceDefinition:
-    spec: {}
+    spec:
+      artifacts:
+        primary:
+          primaryArtifactRef: <+input>
+          sources:
+            - spec:
+                connectorRef: account.NandeeshDocker
+                imagePath: library/nginx
+                tag: <+input>
+                digest: ""
+              identifier: testabc
+              type: DockerRegistry
     type: NativeHelm
