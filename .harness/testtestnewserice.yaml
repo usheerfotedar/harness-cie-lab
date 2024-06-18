@@ -1,0 +1,8 @@
+service:
+  name: testtestnewserice
+  identifier: testtestnewserice
+  orgIdentifier: UsheerNG
+  projectIdentifier: UsheerNGTest
+  serviceDefinition:
+    spec: {}
+    type: NativeHelm
